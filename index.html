@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IdeaPin — платформа для створення та збереження ідей">
+    <meta name="keywords" content="ідеї, збереження, платформа, творчість">
+    <title>IdeaPin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <header>
+        <form action="/search" method="get">
+            <input type="search" id="search" name="query" placeholder="Введіть запит...">
+        </form>
+        <h1>IdeaPin</h1>
+        
+    </header>
+   
+
+    <main>
+        <section>
+            <button class="menu"><img src="menu.png" alt="Меню"></button>
+            <div class="nav">
+                <button class="ak"><img src="user.png" alt="Ваш акаунт"> Ваш акаунт</button><br>
+                <button class="r"><img src="Book open.png" alt="Ваші роботи"> Ваші роботи</button><br>
+                <button class="sr"><img src="Edit 3.png" alt="Створити роботу"> Створити роботу</button><br>
+                <button class="zr"><img src="Star.png" alt="Збережені роботи"> Збережені роботи</button><br>
+                <button class="yr"><img src="Heart.png" alt="Уподобані роботи"> Уподобані роботи</button><br>
+                <button class="vr"><img src="Trash 2.png" alt="Видалені роботи"> Видалені роботи</button><br>
+                <button class="settings"><img src="Settings.png" alt="Налаштування"> Налаштування</button>
+            </div>
+        </section>
+
+        <div class="container">
+        
+            <h3>W   E   L   C   O   M   E</h3>
+            <div class="gallery-wrap">
+              <div class="item item-1"></div>
+              <div class="item item-2"></div>
+              <div class="item item-3"></div>
+              <div class="item item-4"></div>
+              <div class="item item-5"></div>
+            </div>
+           </div>
+          
+          <div class="social">
+            <a href="https://twitter.com/StefCharle" target="_blank">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
+            </a>
+          </div>
+      
+
+        <div class="akaunt">
+            <h2>Реєстрація</h2>
+            <form>
+                <input id="login" type="text" placeholder="Ваш логін"><br>
+                <input id="password" type="password" placeholder="Ваш пароль">
+            </form>
+        </div>
+
+        <div class="robota">
+            <h2>Ще немає робіт</h2>
+        </div>
+
+        <div class="slider-container">
+            <button class="nav-btn" id="btnPrev">&#10094;</button>
+            <div class="slider-track" id="sliderTrack">
+                <div class="card" data-tilt data-tilt-max="15" data-tilt-speed="600">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Card 1">
+                    
+                </div>
+                <div class="card" data-tilt data-tilt-max="15" data-tilt-speed="600">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Card 2">
+                    
+                </div>
+                <div class="card" data-tilt data-tilt-max="15" data-tilt-speed="600">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Card 3">
+                    
+                </div>
+            </div>
+            <button class="nav-btn" id="btnNext">&#10095;</button>
+        </div>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IdeaPin. Всі права захищено.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
